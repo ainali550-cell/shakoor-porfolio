@@ -389,10 +389,11 @@
                       {/* Info rows */}
                       {[
                         { key: 'operator', val: 'Shakoor Malik' },
-                        { key: 'role', val: 'AI & Web Engineer' },
+                        { key: 'role', val: 'AI · Physics · Educator' },
                         { key: 'location', val: 'Pakistan 🇵🇰' },
                         { key: 'status', val: '● ONLINE', color: '#34d399' },
-                        { key: 'speciality', val: 'Prompt · UI · GenAI' },
+                        { key: 'teaching', val: '9 Yrs Govt Sector' },
+                        { key: 'fields', val: 'AI · Web · Video · Science' },
                       ].map(r => (
                         <div key={r.key} className="flex gap-3 py-2 border-b border-white/4 last:border-0">
                           <span className="font-mono text-[10px] text-slate-500 uppercase tracking-widest w-24 flex-shrink-0 pt-[1px]">{r.key}</span>
@@ -403,11 +404,12 @@
                   </div>
 
                   {/* Mini stats */}
-                  <div className="grid grid-cols-3 gap-2 mt-3">
+                  <div className="grid grid-cols-4 gap-2 mt-3">
                     {[
                       { n: '50+', l: 'Projects' },
-                      { n: '20+', l: 'AI Pipelines' },
-                      { n: '3+', l: 'Years' },
+                      { n: '20+', l: 'AI Videos' },
+                      { n: '9yr', l: 'Teaching' },
+                      { n: 'MSc', l: 'Physics' },
                     ].map(s => (
                       <div key={s.n} className="terminal p-3 text-center">
                         <div className="font-mono text-lg font-bold text-sky-400">{s.n}</div>
@@ -435,9 +437,9 @@
                 <span className="section-num">01 // ABOUT</span>
                 <h2 className="text-3xl font-bold text-white mt-3 mb-6">Bridging Code and<br/>Advanced Inference</h2>
                 <div className="space-y-4 text-slate-400 text-[15px] leading-relaxed">
-                  <p>I operate as a hybrid technologist specialising in building high-fidelity web layers while managing precise generative AI infrastructure. Based in Pakistan, delivering globally.</p>
-                  <p>My development workflow couples structural reliability with targeted interactive mechanics — ensuring user interfaces translate into optimised data flows and real business outcomes.</p>
-                  <p>From AI prompt engineering on platforms like <span className="text-sky-400 font-mono text-sm">The Lex Vault</span> to regional digital advocacy for educational institutions, I bring full-stack thinking to every layer of a project.</p>
+                  <p>I am a multi-disciplinary technologist, educator, and creative — blending <span className="text-sky-400">AI engineering</span>, <span className="text-indigo-400">web development</span>, <span className="text-purple-400">video production</span>, and <span className="text-emerald-400">academic science</span> into one unified skill set. Based in Pakistan, delivering globally.</p>
+                  <p>With <span className="text-white font-semibold">9 years of government sector teaching experience</span> in Physics and Mathematics — from metric to Master's level — I bring structured thinking, clarity of explanation, and deep problem-solving ability to every project I take on.</p>
+                  <p>From cinematic AI video generation and ECCE child content (English/Urdu poems & stories) to prompt engineering on <span className="text-sky-400 font-mono text-sm">The Lex Vault</span> — I bridge the gap between technical precision and creative execution.</p>
                 </div>
 
                 <div className="mt-8 terminal p-4 rounded-xl">
@@ -452,9 +454,9 @@
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { n: '50+', label: 'Deployed Projects', color: 'sky' },
-                  { n: '20+', label: 'AI/GenAI Pipelines', color: 'indigo' },
-                  { n: '3+', label: 'Years Experience', color: 'emerald' },
-                  { n: '∞', label: 'Lines of Prompts', color: 'purple' },
+                  { n: '20+', label: 'AI Video & GenAI Pipelines', color: 'indigo' },
+                  { n: '9 yrs', label: 'Govt Teaching Experience', color: 'emerald' },
+                  { n: 'M.Sc', label: 'Physics & Mathematics', color: 'purple' },
                 ].map(s => (
                   <div key={s.n} className={`card-lift p-6 rounded-xl border border-white/5 bg-[var(--surface2)]/40`}>
                     <div className={`text-4xl font-bold font-mono mb-2 ${
@@ -551,30 +553,92 @@
             <span className="section-num">03 // SKILLS</span>
             <h2 className="text-3xl font-bold text-white mt-3 mb-12">Technical Skill Matrix</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
               {/* AI & Prompt */}
-              <div className="border border-white/5 rounded-2xl p-6 bg-[#0d1424]/60">
+              <div className="card-lift border border-white/5 rounded-2xl p-6 bg-[#0d1424]/60">
                 <div className="flex items-center gap-2 mb-5">
-                  <span className="w-2 h-2 rounded-full bg-sky-400"></span>
+                  <span className="w-2 h-2 rounded-full bg-sky-400 shadow-[0_0_6px_#38bdf8]"></span>
                   <h3 className="font-mono text-xs text-sky-400 uppercase tracking-widest">AI & Prompt Engineering</h3>
                 </div>
                 <div className="mb-5">
                   {[
                     { name: 'Prompt Engineering', pct: 95 },
-                    { name: 'Image / Video GenAI', pct: 90 },
+                    { name: 'AI Image Generation', pct: 92 },
+                    { name: 'AI Video Generation', pct: 90 },
+                    { name: 'AI Song / Audio Gen', pct: 85 },
                     { name: 'AI Workflow Design', pct: 85 },
-                    { name: 'Model Fine-tuning', pct: 70 },
                   ].map(s => <SkillBar key={s.name} {...s} color="#38bdf8" />)}
                 </div>
                 <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
-                  {['Midjourney','Runway','ComfyUI','Claude','GPT-4'].map(b => <Badge key={b} label={b} color="sky" />)}
+                  {['Midjourney','Runway','Suno AI','ComfyUI','Claude','GPT-4','Kling'].map(b => <Badge key={b} label={b} color="sky" />)}
+                </div>
+              </div>
+
+              {/* Video Production */}
+              <div className="card-lift border border-white/5 rounded-2xl p-6 bg-[#0d1424]/60">
+                <div className="flex items-center gap-2 mb-5">
+                  <span className="w-2 h-2 rounded-full bg-rose-400 shadow-[0_0_6px_#fb7185]"></span>
+                  <h3 className="font-mono text-xs text-rose-400 uppercase tracking-widest">Video Production</h3>
+                </div>
+                <div className="mb-5">
+                  {[
+                    { name: 'Professional Video Editing', pct: 92 },
+                    { name: 'Animated / Cartoon Video', pct: 88 },
+                    { name: 'YouTube All Categories', pct: 90 },
+                    { name: 'Social Media Videos', pct: 93 },
+                    { name: 'ECCE Child Content', pct: 88 },
+                  ].map(s => <SkillBar key={s.name} {...s} color="#fb7185" />)}
+                </div>
+                <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                  {['CapCut','Premiere Pro','After Effects','Canva Video','HeyGen','Pictory'].map(b => <Badge key={b} label={b} color="rose" />)}
+                </div>
+              </div>
+
+              {/* Physics & Maths */}
+              <div className="card-lift border border-white/5 rounded-2xl p-6 bg-[#0d1424]/60">
+                <div className="flex items-center gap-2 mb-5">
+                  <span className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_6px_#fbbf24]"></span>
+                  <h3 className="font-mono text-xs text-amber-400 uppercase tracking-widest">Physics & Mathematics</h3>
+                </div>
+                <div className="mb-5">
+                  {[
+                    { name: 'Physics (Metric → Master)', pct: 95 },
+                    { name: 'Mathematics (All Levels)', pct: 93 },
+                    { name: 'Problem Solving', pct: 96 },
+                    { name: 'Scientific Writing', pct: 85 },
+                    { name: 'Lab & Experiment Design', pct: 82 },
+                  ].map(s => <SkillBar key={s.name} {...s} color="#fbbf24" />)}
+                </div>
+                <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                  {['Metric','Intermediate','Bachelor','Master','Olympiad'].map(b => <Badge key={b} label={b} color="amber" />)}
+                </div>
+              </div>
+
+              {/* Teaching */}
+              <div className="card-lift border border-white/5 rounded-2xl p-6 bg-[#0d1424]/60">
+                <div className="flex items-center gap-2 mb-5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_6px_#34d399]"></span>
+                  <h3 className="font-mono text-xs text-emerald-400 uppercase tracking-widest">Teaching & Education</h3>
+                </div>
+                <div className="mb-5">
+                  {[
+                    { name: 'Classroom Teaching', pct: 97 },
+                    { name: 'Curriculum Design', pct: 88 },
+                    { name: 'ECCE (Early Childhood)', pct: 90 },
+                    { name: 'Urdu / English Content', pct: 92 },
+                    { name: 'Digital Teaching Tools', pct: 85 },
+                  ].map(s => <SkillBar key={s.name} {...s} color="#34d399" />)}
+                </div>
+                <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                  {['9 Yrs Govt Sector','Physics','Maths','ECCE','Urdu Poems','English Stories'].map(b => <Badge key={b} label={b} color="emerald" />)}
                 </div>
               </div>
 
               {/* Frontend */}
-              <div className="border border-white/5 rounded-2xl p-6 bg-[#0d1424]/60">
+              <div className="card-lift border border-white/5 rounded-2xl p-6 bg-[#0d1424]/60">
                 <div className="flex items-center gap-2 mb-5">
-                  <span className="w-2 h-2 rounded-full bg-indigo-400"></span>
+                  <span className="w-2 h-2 rounded-full bg-indigo-400 shadow-[0_0_6px_#818cf8]"></span>
                   <h3 className="font-mono text-xs text-indigo-400 uppercase tracking-widest">Frontend Development</h3>
                 </div>
                 <div className="mb-5">
@@ -591,9 +655,9 @@
               </div>
 
               {/* Design */}
-              <div className="border border-white/5 rounded-2xl p-6 bg-[#0d1424]/60">
+              <div className="card-lift border border-white/5 rounded-2xl p-6 bg-[#0d1424]/60">
                 <div className="flex items-center gap-2 mb-5">
-                  <span className="w-2 h-2 rounded-full bg-purple-400"></span>
+                  <span className="w-2 h-2 rounded-full bg-purple-400 shadow-[0_0_6px_#c084fc]"></span>
                   <h3 className="font-mono text-xs text-purple-400 uppercase tracking-widest">Design & Visual</h3>
                 </div>
                 <div className="mb-5">
@@ -601,13 +665,14 @@
                     { name: 'UI/UX Design', pct: 90 },
                     { name: 'Print & Poster Design', pct: 88 },
                     { name: 'Brand Identity', pct: 82 },
-                    { name: 'Motion Graphics', pct: 75 },
+                    { name: 'Motion Graphics', pct: 78 },
                   ].map(s => <SkillBar key={s.name} {...s} color="#c084fc" />)}
                 </div>
                 <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
                   {['Figma','Photoshop','Canva','CapCut','After Effects'].map(b => <Badge key={b} label={b} color="purple" />)}
                 </div>
               </div>
+
             </div>
           </section>
 
