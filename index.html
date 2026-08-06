@@ -180,7 +180,7 @@
           min-width: 100%; min-height: 100%; width: auto; height: auto;
           transform: translate(-50%, -50%);
           object-fit: cover;
-          filter: brightness(0.42) saturate(1.15) contrast(1.08);
+          filter: brightness(0.75) saturate(1.2) contrast(1.1);
         }
         /* Cinematic letterbox bars */
         .bg-video-layer .letterbox-top,
@@ -194,8 +194,8 @@
         .bg-video-layer .vignette {
           position: absolute; inset: 0; z-index: 2;
           background:
-            radial-gradient(ellipse at center, transparent 30%, rgba(5,8,16,0.55) 100%),
-            linear-gradient(rgba(7,11,20,0.55), rgba(7,11,20,0.75));
+            radial-gradient(ellipse at center, transparent 40%, rgba(5,8,16,0.35) 100%),
+            linear-gradient(rgba(7,11,20,0.25), rgba(7,11,20,0.5));
         }
         /* Ensure app content always sits above the fixed video */
         #root { position: relative; z-index: 1; }
