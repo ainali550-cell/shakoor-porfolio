@@ -631,6 +631,17 @@
                     linkText: 'Investor Prototype',
                     detail: 'Python · PyTorch · XGBoost · scikit-learn · Flask · Three.js · YAML',
                   },
+                  {
+                    num: '05',
+                    badge: 'Publishing Platform',
+                    badgeColor: 'indigo',
+                    name: 'AinAli Publications',
+                    desc: 'A cinematic ebook storefront for the Agile Practitioner Series — full-bleed looping video hero, a browsable catalog, author bio, and an FAQ built for conversion. Checkout runs through Gumroad for secure, DRM-free instant delivery in PDF & ePub.',
+                    tags: ['HTML5', 'CSS3', 'JavaScript', 'Video Background', 'Gumroad Integration', 'Responsive UI', 'GitHub Pages'],
+                    link: 'https://ainali550-cell.github.io/AINALI-PUBLICATIONS/',
+                    linkText: 'View Live →',
+                    detail: 'HTML5 · CSS3 · JavaScript · Video Hero · Gumroad Checkout · GitHub Pages',
+                  },
                 ].map(p => (
                   <div key={p.num} className="card-lift relative border border-white/5 rounded-2xl p-8 bg-[#0d1424]/60 overflow-hidden group">
                     <span className="proj-num">{p.num}</span>
@@ -769,7 +780,7 @@
                   ].map(s => <SkillBar key={s.name} {...s} color="#818cf8" />)}
                 </div>
                 <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
-                  {['React','Tailwind','HTML5','CSS3','JS','Netlify'].map(b => <Badge key={b} label={b} color="indigo" />)}
+                  {['React','Tailwind','HTML5','CSS3','JS','Netlify','GitHub Pages','Gumroad'].map(b => <Badge key={b} label={b} color="indigo" />)}
                 </div>
               </div>
 
